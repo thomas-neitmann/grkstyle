@@ -89,16 +89,6 @@ grk_style_transformer <- function(...) {
     pd
   }
 
-  # Function arguments on new lines, indented with 2 spaces
-  tidy_style$indention$update_indention_ref_fun_dec <- function(pd_nested) {
-    if (pd_nested$token[1] == "FUNCTION" && nrow(pd_nested) > 4) {
-      seq <- seq.int(3L, nrow(pd_nested) - 2L)
-      pd_nested$indention_ref_pos_id[seq] <- 0L
-      pd_nested$indent[seq] <- 2L
-    }
-    pd_nested
-  }
-
   tidy_style
 }
 
