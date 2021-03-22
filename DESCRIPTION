@@ -15,7 +15,7 @@ Description: A tidy code style building on the tidyverse code
 License: MIT + file LICENSE
 Imports: 
     purrr,
-    styler (>= 1.1.1),
+    styler,
     magrittr
 Encoding: UTF-8
 LazyData: true
